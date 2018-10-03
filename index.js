@@ -19,6 +19,7 @@ function currentLine(line) {
   } else {
     var linebs = `The line is currently: `
     for (let i = 0; i < line.length; i++){
+      //had to figure out a way to get rid of the comma if last person in line
       if (i === line.length - 1){
         linebs = linebs + (`${i + 1}. ${line[i]}`)
       } else {
